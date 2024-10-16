@@ -1,0 +1,125 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #000000, #3d0066);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-box {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9), 0 0 20px rgba(128, 0, 128, 0.4);
+    text-align: center;
+    width: 350px;
+    border: 1px solid #9900cc;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #cc99ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.login-box label {
+    display: block;
+    text-align: left;
+    color: #ccccff;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #9900cc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #1f1f3f;
+    color: #fff;
+}
+
+.login-box input::placeholder {
+    color: #b3b3ff;
+}
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.login-button {
+    background: linear-gradient(45deg, #9900cc, #cc66ff);
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.login-button:hover {
+    background: linear-gradient(45deg, #800080, #bf40bf);
+    box-shadow: 0 0 15px rgba(173, 173, 255, 0.7);
+}
+
+.request-button {
+    background-color: #333366;
+    color: #e6e6ff;
+    padding: 12px;
+    border: 1px solid #9900cc;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.request-button:hover {
+    background-color: #800080;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(102, 0, 204, 0.7);
+}
+
+.extra-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.extra-links a {
+    color: #cc99ff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
+}
