@@ -1,5 +1,5 @@
 {
-  "name": "workshop1",
+  "name": "workshop",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -8,5 +8,9 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "\"# my_wokeshop\"",
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "devDependencies": {}
 }
