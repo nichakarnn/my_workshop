@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,21 +12,36 @@
             <h2>Log In to Your Account</h2>
             <form action="#">
                 <label for="username">Username</label>
-                <input type="username" id="username" placeholder="Enter your username">
+                <input type="text" id="username" placeholder="Enter your username" required>
                 
                 <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter your password">
+                <input type="password" id="password" placeholder="Enter your password" required>
+                
+                <div class="input-group">
+                    <label for="role">Role</label>
+                    <select id="role" required>
+                        <option value="" disabled selected>Select your role</option>
+                        <option value="student">Student</option>
+                        <option value="lecturer">Lecturer</option>
+                    </select>
+                </div>
                 
                 <div class="button-group">
-                    <button type="submit" class="login-button">Log in</button>
-                    <button type="button" class="request-button">Request</button>
+                    <button type="button" class="login-button" onclick="submitLogin()">Log in</button>
+                    <button type="button" class="request-button" onclick="call_REST_API_Hello()">Request</button>
                 </div>
+            
+                <!-- Message Box -->
+                <div id="message" class="message-box"></div> <!-- Added message-box here -->
             </form>
+            
             <div class="extra-links">
                 <a href="#">Create an account</a>
                 <a href="#">Forgot password?</a>
             </div>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
+        
 </html>

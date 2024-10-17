@@ -28,7 +28,7 @@ body {
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9), 0 0 20px rgba(128, 0, 128, 0.4);
     text-align: center;
-    width: 350px;
+    width: 400px;
     border: 1px solid #9900cc;
 }
 
@@ -62,6 +62,38 @@ body {
 
 .login-box input::placeholder {
     color: #b3b3ff;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.input-group label {
+    color: #fff;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"],
+.input-group select {
+    background-color: #4e0099;
+    color: #fff;
+}
+
+.input-group input::placeholder {
+    color: #bbb;
 }
 
 /* Button group styling */
@@ -122,4 +154,18 @@ body {
 
 .extra-links a:hover {
     text-decoration: underline;
+}
+
+/* Message Box Styling */
+.message-box {
+    margin-top: 20px;
+    padding: 10px;
+    /*background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    color: #ffffff; /* White text color */
+    /*border: 1px solid #9900cc; /* Match the login-box border */
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    word-wrap: break-word; /* Ensure long messages wrap to the next line */
+    text-align: center; /* Center the message */
 }
