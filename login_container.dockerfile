@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 ENV NODE_ENV=production
 # Build Node.js Application
 # Step 1: Copy the package.json and package-lock.json (if available)
-COPY Frontend/package*.json ./
+COPY . ./package*.json ./
 #COPY ./public /usr/src/app/public
 
 # Step 2: Install the Node.js dependencies

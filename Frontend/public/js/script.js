@@ -62,30 +62,3 @@ function submitLogin() {
 }
 
 
-
-
-function call_REST_API_Hello() {
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-
-    if (!username || !password) {
-        document.getElementById('message').innerText = 'Please enter in both username and password.';
-        return;
-    }
-
-    const url = (
-        'http://localhost:3000/hello?' +
-        new URLSearchParams({ myName: username, lastName: password}).toString()
-      );
-    
-    fetch(url)
-    .then(response => response.text())
-    .then(text => {
-        document.getElementById('message').innerText = text;
-    })
-    //.catch(error => console.error('Error:', error));
-    .catch(error => {
-        console.error('Error:', error);
-        document.getElementById('message').innerText = 'Request failed. Please try again.';
-    });
-}
